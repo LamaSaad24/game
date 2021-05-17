@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+ 
+     <div style="background-image: url('images/6.jpg'); background-position: bottom;"class=" p-5 vh-100 vw-100 container">
+       
+            <h1>Number guessing game</h1>
+        <p class="text-white bg-dark p-1 ">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+         <form action="">
+             <div class="form-group">
+                 <label for="" class="text-white bg-dark p-1 ">Enter a guess:</label>
+                 <input  id="number" type="number" class="form-control" autocomplete="off">
+                 <div class="d-flex justify-content-center py-3">
+                 <button id="submitBtn" class=" btn  btn-warning my-3">Submit guess</button>
+                  </div>
+            </div>
+
+         </form>
+        <div id="res">
+            <div class="bg-secondary p-2 text-white">
+                <span>Previous guesses : </span> <span id="span"></span></div>
+          
+            <div id="result" class="result bg-danger my-2 p-1 text-center"> </div>
+   
+            <div class="d-flex justify-content-center py-3">
+    <button id="startBtn" class="btn btn-info">Start new game</button>
+    </div>
+   
+ 
+        </div>
+        
+
+        
+       
+    </div> 
+   
+
+ 
+
+
+<script src="js/main.js"  ></script>
+<script src="js/ex.js"  ></script>
+</body>
+</html>
